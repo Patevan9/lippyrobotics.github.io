@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lippy-robotics.gt.tc/sitemap.xml
+Sitemap: https://patevan9.github.io/lippyrobotics.github.io/sitemap.xml
