@@ -582,6 +582,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .tag-sqlite { background: rgba(80,180,140,0.1); color: #50b48c; border: 1px solid rgba(80,180,140,0.18); }
   .tag-sandbox { background: rgba(180,100,180,0.1); color: #b464b4; border: 1px solid rgba(180,100,180,0.18); }
   .tag-cloud { background: rgba(140,140,140,0.1); color: #888; border: 1px solid rgba(140,140,140,0.18); }
+  .tag-live { background: rgba(0,255,208,0.10); color: var(--teal); border: 1px solid rgba(0,255,208,0.22); }
+  .tag-planned { background: rgba(58,80,104,0.35); color: var(--faint); border: 1px solid rgba(58,80,104,0.5); }
 
   /* ── FACE DETAIL ──────────────────────────────── */
   .face-detail-section {
@@ -1072,10 +1074,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="cap-card reveal">
       <div class="cap-status status-live">
         <div class="cap-status-dot"></div>
-        <span>Live</span>
+        <span>Partial</span>
       </div>
       <div class="cap-title">Memory System</div>
-      <p class="cap-text">Five-layer architecture. Working memory, habit store, truth database, proposal sandbox, and reflective layer — all isolated and governed separately.</p>
+      <p class="cap-text">Five-layer design. Truth Database and Habit Store are live today. Working Memory, Proposal Sandbox, and Reflective Layer are designed and planned, not yet built.</p>
     </div>
 
     <div class="cap-card reveal">
@@ -1106,14 +1108,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="memory-inner">
     <span class="section-label reveal">Memory Architecture</span>
     <h2 class="section-title reveal">Five layers.<br><em>All separated.</em> Always.</h2>
-    <p class="section-body reveal" style="max-width:500px;">Scout's memory is not a single database. It is five distinct layers with strict rules governing what can mix, what can be trusted, and what requires your approval before it becomes real.</p>
+    <p class="section-body reveal" style="max-width:500px;">Scout's memory is not a single database. It is five distinct layers with strict rules governing what can mix, what can be trusted, and what requires your approval before it becomes real. Two of the five are live in the app today — Truth Database and Habit Store. The other three below are designed and planned, marked accordingly.</p>
 
     <div class="memory-layers">
       <div class="memory-layer reveal">
         <div class="memory-num">01</div>
         <div>
           <div class="memory-content-title">Working Memory</div>
-          <p class="memory-content-sub">Temporary RAM state. Current conversation context. Cleared each session. Fast, volatile, and never written to permanent storage.</p>
+          <p class="memory-content-sub">Will hold temporary RAM state — current conversation context, cleared each session. Fast, volatile, never written to permanent storage.</p>
+          <span class="memory-tag tag-planned">Planned</span>
           <span class="memory-tag tag-ram">Volatile RAM</span>
         </div>
       </div>
@@ -1122,6 +1125,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div>
           <div class="memory-content-title">Habit Store</div>
           <p class="memory-content-sub">JSON-based memory with natural decay. Used for repeated patterns and behavioral preferences. Habits fade if not reinforced — just like humans.</p>
+          <span class="memory-tag tag-live">Live</span>
           <span class="memory-tag tag-json">JSON + Decay</span>
         </div>
       </div>
@@ -1130,6 +1134,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div>
           <div class="memory-content-title">Truth Database</div>
           <p class="memory-content-sub">SQLite. Permanent factual memory. Stable truths approved by you. Your name lives here. Your family lives here. This does not decay.</p>
+          <span class="memory-tag tag-live">Live</span>
           <span class="memory-tag tag-sqlite">SQLite · Permanent</span>
         </div>
       </div>
@@ -1137,7 +1142,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="memory-num">04</div>
         <div>
           <div class="memory-content-title">Proposal Sandbox</div>
-          <p class="memory-content-sub">Potential learned concepts that Scout wants to remember — but won't until you approve them. Nothing enters the truth layer without permission.</p>
+          <p class="memory-content-sub">Will hold potential learned concepts Scout wants to remember, pending your approval. Nothing will enter the truth layer without permission.</p>
+          <span class="memory-tag tag-planned">Planned</span>
           <span class="memory-tag tag-sandbox">Approval Required</span>
         </div>
       </div>
@@ -1145,7 +1151,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="memory-num">05</div>
         <div>
           <div class="memory-content-title">Reflective Layer</div>
-          <p class="memory-content-sub">Optional external AI suggestions may be considered here. They cannot directly change Scout's identity, permanent memories, core beliefs, settings, or behavior. Any meaningful changes require explicit owner approval.</p>
+          <p class="memory-content-sub">Will hold optional external AI suggestions for consideration. They will never directly change Scout's identity, permanent memories, core beliefs, settings, or behavior — any meaningful change will require explicit owner approval.</p>
+          <span class="memory-tag tag-planned">Planned</span>
           <span class="memory-tag tag-cloud">Read-Only · Cloud</span>
         </div>
       </div>
