@@ -275,6 +275,63 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     margin: 0;
   }
 
+  /* ── HERO CTA ─────────────────────────────────── */
+  .hero-cta-wrap {
+    text-align: center;
+    padding: 0 2rem 3rem;
+  }
+
+  .hero-download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    background: linear-gradient(135deg, var(--teal), var(--accent));
+    color: #142028;
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.95rem 2.2rem;
+    border-radius: 40px;
+    transition: opacity 0.2s, transform 0.15s;
+  }
+  .hero-download-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+
+  /* ── VALUE STRIP ──────────────────────────────── */
+  .value-strip {
+    padding: 3rem 2rem;
+  }
+
+  .value-strip-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .value-item-label {
+    display: block;
+    font-family: var(--sans);
+    font-size: 0.68rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--teal);
+    margin-bottom: 0.5rem;
+  }
+
+  .value-item-desc {
+    font-size: 0.82rem;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
@@ -889,6 +946,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     nav { padding: 1rem 1.5rem; }
     .nav-links { gap: 1rem; flex-wrap: wrap; }
     .philosophy-inner, .face-detail-inner, .creator-section { grid-template-columns: 1fr; gap: 3rem; }
+    .value-strip-inner { grid-template-columns: 1fr; gap: 1.75rem; }
     .phil-dividers { border-left: none; padding-left: 0; border-top: 1px solid var(--border); padding-top: 2rem; }
     .capabilities-grid { grid-template-columns: 1fr; }
     .face-wrapper { width: 300px; height: 180px; }
@@ -941,6 +999,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 
 <p class="hero-trial">Try Scout free for 7 days before your one-time purchase.</p>
+
+<div class="hero-cta-wrap">
+  <a class="hero-download-btn" href="download.html">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3v10.59l3.3-3.3 1.4 1.42L12 17.4l-4.7-4.7 1.4-1.42 3.3 3.3V3h2zM5 19h14v2H5v-2z"/></svg>
+    Download Scout
+  </a>
+</div>
+
+<div class="divider"></div>
+
+<!-- VALUE STRIP -->
+<div class="value-strip">
+  <div class="value-strip-inner">
+    <div class="value-item">
+      <span class="value-item-label">Local First</span>
+      <p class="value-item-desc">Core Scout functions work without depending on the cloud.</p>
+    </div>
+    <div class="value-item">
+      <span class="value-item-label">Private by Design</span>
+      <p class="value-item-desc">Personal memory stays on the device.</p>
+    </div>
+    <div class="value-item">
+      <span class="value-item-label">One-Time Purchase</span>
+      <p class="value-item-desc">No monthly Scout subscription.</p>
+    </div>
+  </div>
+</div>
 
 <div class="divider"></div>
 
