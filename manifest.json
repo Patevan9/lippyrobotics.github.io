@@ -1,7 +1,7 @@
 {
-  "name": "Scout — A Quiet Presence",
-  "short_name": "Scout",
-  "description": "Scout is a private, on-device AI companion for Android — no cloud, no subscriptions, no account required.",
+  "name": "Patevan — A Quiet Presence",
+  "short_name": "Patevan",
+  "description": "Patevan is a private, on-device AI companion for Android — no cloud, no subscriptions, no account required.",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",
