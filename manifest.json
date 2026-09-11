@@ -1,7 +1,7 @@
 {
-  "name": "Patevan — A Quiet Presence",
-  "short_name": "Patevan",
-  "description": "Patevan is a private, on-device AI companion for Android — no cloud, no subscriptions, no account required.",
+  "name": "Tolliver — A Quiet Presence",
+  "short_name": "Tolliver",
+  "description": "Tolliver is a private, on-device AI companion for Android — no cloud, no subscriptions, no account required.",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",
